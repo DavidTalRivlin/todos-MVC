@@ -57,6 +57,10 @@ footer {
     text-decoration: line-through;
 }
 
-.Importance {
-    width: 100px;
+.importance {
+    width: 90px;
+}
+
+.no-task{
+    color: red;
 }

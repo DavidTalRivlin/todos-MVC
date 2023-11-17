@@ -8,6 +8,7 @@ _createTodos()
 
 function getTodos() {
 	if (gFilterBy === 'All') return gTodos
+	
 
 	const isDone = gFilterBy === 'Done' ? true : false
 	return gTodos.filter(todo => todo.isDone === isDone)
