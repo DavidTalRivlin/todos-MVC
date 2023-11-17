@@ -58,10 +58,14 @@ function addTodo(txt) {
 }
 
 function removeTodo(todoId) {
-	const idx = gTodos.findIndex(todo => todo.id === todoId)
-	gTodos.splice(idx, 1)
+	if (confirm ('are you sure you want to delete the task?')) {
 
-	_saveTodos()
+		
+		const idx = gTodos.findIndex(todo => todo.id === todoId)
+		gTodos.splice(idx, 1)
+		
+		_saveTodos()
+	}
 }
 
 function toggleTodo(todoId) {
